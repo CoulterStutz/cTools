@@ -1,4 +1,6 @@
 import os
+import time
+import datetime.datetime as datetime
 
 
 class Terminal():
@@ -17,3 +19,7 @@ class Terminal():
                 os.listdir(self.current_directory)
             else:
                 os.listdir(directory)
+    
+    class Time():
+        def delay(seconds:int):
+            time.sleep(seconds)
